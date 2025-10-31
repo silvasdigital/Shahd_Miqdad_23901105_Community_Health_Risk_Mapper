@@ -1,44 +1,52 @@
-# Weather App
+# Community Health Risk Mapper
 
-## Result
+This project is an educational web application designed to demonstrate how geographic data and health metrics can be combined to visualize community health risks. It's a non-functional, educational tool that uses pre-set, simulated data.
 
-![preview page](./src/imgs/preview.png)  
-[LIVE DEMO](https://silva-mo.github.io/weather-app)
+The application loads an interactive map using **Leaflet.js** and places colored risk overlays on different communities. A **Chart.js** bar chart provides a visual breakdown of the risk factors for the selected area.
 
-## About
+## ✨ Features
 
-This is my fourth JavaScript project from **The Odin Project** curriculum — a fully functional **Weather App**.  
-It deepened my skills in **API handling**, **asynchronous JavaScript** (`async/await` & Promises), and improved my approach to **frontend UI handling**.  
-I also implemented **loading components** and basic **frontend error handling** for a better user experience.
+- **Interactive Map:** Uses Leaflet.js to display a fully interactive map.
+- **Risk Overlays:** Dynamically draws colored circles on the map to represent high, medium, or low-risk zones.
+- **Data Visualization:** A horizontal bar chart (using Chart.js) displays the underlying health metrics for each community (e.g., Air Quality, Park Access).
+- **Pre-set Scenarios:** Includes 3 hard-coded community scenarios that users can load by clicking buttons.
+- **Responsive Design:** The layout is mobile-friendly and centers content correctly on all screen sizes.
+- **Modern Tech Stack:** Built with HTML, CSS, and JavaScript, and bundled with Webpack.
 
-Alhamdulillah
+## 🚀 Getting Started
 
-## What was needed to complete it:
+Follow these instructions to get a copy of the project up and running on your local machine.
 
-- Fetching and processing data from a public Weather API
-- Using **`async/await`** and **Promises** for clean asynchronous code
-- Integrating the **Geolocation API** to get user location-based weather
-- Adding **loading components** during data fetch
-- Handling simple frontend errors for failed API requests
-- Using **dynamic imports** for efficient code splitting
-- Creating a responsive and visually appealing UI
+### Prerequisites
 
-## Challenges that I’ve overcome:
+You need to have [Node.js](https://nodejs.org/) and npm (which comes with Node.js) installed on your system.
 
-- Working with the **Geolocation API** while managing user permissions and errors
-- Implementing **dynamic imports** without breaking the Webpack build
-- Ensuring smooth loading states and clear error messages
-- Handling asynchronous code in a modular, maintainable way
-- Making the UI responsive and consistent across devices
+### Installation & Setup
 
-## Tech Stack
+1.  **Clone the repository:**
 
-- JavaScript (ES6)
-- HTML5
-- CSS3 (Flexbox & Grid)
-- Webpack
-- Weather API
+    ```bash
+    git clone <your-repository-url>
+    cd community-health-risk-mapper
+    ```
 
----
+2.  **Install dependencies:**
+    This command will install all the necessary packages defined in `package.json`, including `leaflet` and `chart.js`.
+    ```bash
+    npm install
+    ```
 
-✅ Built with care — feel free to explore or contribute!
+### Running the Application
+
+- **For Development:**
+  This command starts a live development server and automatically opens the calculator in your browser.
+
+  ```bash
+  npm run start
+  ```
+
+- **For Production:**
+  This command builds an optimized version of the application, ready for deployment. The optimized files will be placed in the `/dist` directory.
+  ```bash
+  npm run build
+  ```

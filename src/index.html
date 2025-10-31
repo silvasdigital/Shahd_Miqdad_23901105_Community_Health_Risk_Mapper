@@ -3,35 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather App</title>
-    <link rel="icon" href="imgs/weather-icons/clear-day.svg" />
+    <title>Community Health Risk Mapper</title>
   </head>
   <body>
     <header>
-      <div class="logo-container">
-        <img src="./imgs/logo.svg" alt="logo" />
-        <h1>Weather App</h1>
-      </div>
-      <div class="slider_div">
-        <label for="unit"
-          ><span class="label-txt">Switch Unit</span>
-          <div class="slider-container">
-            <input type="checkbox" id="unit" value="F" />
-            <span class="slider"></span>
-          </div>
-        </label>
-      </div>
+      <h1>Community Health Risk Mapper</h1>
+      <p>Educational V1</p>
+      <p>Made by Shahd Miqdad 23901105</p>
     </header>
     <main>
-      <div class="search-bar-container">
-        <input type="search" id="search-bar" placeholder="Search for a location" />
-        <img src="./imgs/search.svg" alt="search" />
+      <section class="card">
+        <h2>Risk Map</h2>
+        <div id="map"></div>
+      </section>
+
+      <div class="card-deck">
+        <section id="info-card" class="card">
+          <h2>Community Details</h2>
+          <ul>
+            <li><strong>Community:</strong> <span id="comm-name">--</span></li>
+            <li><strong>Risk Level:</strong> <span id="comm-risk" class="risk-low">--</span></li>
+            <li><strong>Population:</strong> <span id="comm-pop">--</span></li>
+          </ul>
+          <div class="chart-container">
+            <canvas id="metricsChart"></canvas>
+          </div>
+        </section>
+
+        <section class="card controls">
+          <h2>Select Community</h2>
+          <p>Load data for a pre-set community to visualize its health risk.</p>
+          <div class="button-group">
+            <button id="btn-comm-a">Sunrise Valley (Low Risk)</button>
+            <button id="btn-comm-b">Downtown Core (Mid Risk)</button>
+            <button id="btn-comm-c">Ironwood District (High Risk)</button>
+          </div>
+        </section>
       </div>
     </main>
-    <div class="footer">
-      <a href="https://github.com/Silva-Mo/weather-app"
-        >Copyright © Webpage by: Silva-Mo<img src="imgs/github-mark-white.svg"
-      /></a>
-    </div>
   </body>
 </html>

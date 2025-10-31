@@ -1,7 +1,7 @@
 {
-  "name": "weather-app",
+  "name": "Community_Health_Risk_Mapper",
   "version": "1.0.0",
-  "description": "a JS project for API / Promises / async await practice",
+  "description": "student project",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,15 +9,10 @@
     "start": "webpack serve --open --config webpack.dev.js"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Silva-Mo/weather-app"
+    "type": "git"
   },
   "author": "Silva-Mo",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Silva-Mo/weather-app/issues"
-  },
-  "homepage": "https://github.com/Silva-Mo/weather-app#readme",
   "devDependencies": {
     "@eslint/js": "^9.32.0",
     "copy-webpack-plugin": "^13.0.0",
@@ -35,5 +30,9 @@
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^5.0.4",
     "webpack-merge": "^5.10.0"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.3",
+    "leaflet": "^1.9.4"
   }
 }
